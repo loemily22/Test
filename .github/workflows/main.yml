@@ -17,8 +17,8 @@ jobs:
   build-and-deploy:
 
     runs-on: windows-latest
-
-     steps:
+    
+    steps:
 
     - uses: actions/checkout@main
 
@@ -26,12 +26,9 @@ jobs:
 
       uses: azure/webapps-deploy@v1
 
-      with:
-
-      CMST385-eloredo1 - Web Deploy"
-
-        slot-name: 'production'
-
-   ${{ secrets.AppServiceUMGC }}
-
- 
+      with: 
+         <publishProfile profileName="CMST385-eloredo1
+      
+      run: 'production'
+      
+      publish-profile: ${{ secrets.UMGC }}
